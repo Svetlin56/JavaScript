@@ -1,6 +1,8 @@
 function solve(n, myArr) {
     let myArr = myArr.slice(0, n);
-    
+    let reserved = myArr.reserved();
+    let asString = reserved.join(' ');
+    console.log(asString);
 }
 
 solve(3, [10, 20, 30, 40, 50]);
